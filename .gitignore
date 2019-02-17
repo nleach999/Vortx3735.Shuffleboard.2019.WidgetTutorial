@@ -8,6 +8,3 @@ bin
 .classpath
 .project
 
-# Shuffleboard Debug launch config
-!.vscode/launch.json
-
