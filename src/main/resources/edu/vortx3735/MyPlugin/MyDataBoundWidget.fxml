@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import eu.hansolo.medusa.Gauge?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="_thePane"
+	fx:controller="edu.vortx3735.MyPlugin.MyDataBoundWidget" minWidth="400"
+	minHeight="256">
+	<VBox  AnchorPane.topAnchor="15" AnchorPane.rightAnchor="0"
+		AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0">
+		
+		<Label prefWidth="64738" text="VorTx 3735 Gauge" alignment="CENTER" />
+		
+		<Gauge fx:id="_theGauge" skinType="GAUGE" />
+	</VBox>
+</AnchorPane>
+

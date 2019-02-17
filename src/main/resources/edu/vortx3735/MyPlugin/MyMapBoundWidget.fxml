@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import eu.hansolo.medusa.Gauge?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="_thePane"
+	fx:controller="edu.vortx3735.MyPlugin.MyMapBoundWidget" minWidth="256" minHeight="600">
+	<VBox AnchorPane.topAnchor="15" AnchorPane.bottomAnchor="0"
+		AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+		<Gauge fx:id="_topGauge" skinType="SIMPLE_DIGITAL" />
+		<Gauge fx:id="_middleGauge" skinType="INDICATOR" />
+		<Gauge fx:id="_bottomGauge" skinType="GAUGE" />
+	</VBox>
+</AnchorPane>
+
