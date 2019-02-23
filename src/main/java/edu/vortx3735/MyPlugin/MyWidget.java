@@ -1,5 +1,6 @@
 package edu.vortx3735.MyPlugin;
 
+import edu.wpi.first.shuffleboard.api.data.types.NoneType;
 import edu.wpi.first.shuffleboard.api.widget.Description;
 import edu.wpi.first.shuffleboard.api.widget.ParametrizedController;
 import edu.wpi.first.shuffleboard.api.widget.SimpleAnnotatedWidget;
@@ -8,7 +9,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 
-@Description(dataTypes = { Boolean.class }, name = "My Test Widget")
+// The tutorial video shows the dataTypes as "Boolean.class" but it should be
+// NoneType.class for widgets that don't support data binding.
+@Description(dataTypes = { NoneType.class }, name = "My Test Widget")
 @ParametrizedController(value = "MyWidget.fxml")
 @SuppressWarnings("all")
 public class MyWidget extends SimpleAnnotatedWidget {
