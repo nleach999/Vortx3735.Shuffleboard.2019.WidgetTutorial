@@ -83,9 +83,9 @@ public class MyMapBoundWidget extends SimpleAnnotatedWidget<MapData> implements 
 		LinkedList<Group> propertyList = new LinkedList<Group>();
 
 		propertyList.add(Group.of("Map Key Values"
-		, Setting.of("Top Key", "The key value in the map to assign to the top gauge.", _topKey)
-		, Setting.of("Middle Key", "The key value in the map to assign to the middle gauge.", _middleKey)
-		, Setting.of("Bottom Key", "The key value in the map to assign to the bottom gauge.", _bottomKey)
+		, Setting.of("Top Key", "The key value in the map to assign to the top gauge.", _topKey, String.class)
+		, Setting.of("Middle Key", "The key value in the map to assign to the middle gauge.", _middleKey, String.class)
+		, Setting.of("Bottom Key", "The key value in the map to assign to the bottom gauge.", _bottomKey, String.class)
 		));
 
 
