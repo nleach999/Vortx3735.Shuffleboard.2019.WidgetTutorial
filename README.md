@@ -76,5 +76,24 @@ A tutorial about debugging in VSCode can be found [here](https://code.visualstud
 
 
 # Errors and Issues
-During debugging, I noticed that some of the widget properties would cause the Shuffleboard to have an error when saving the layout.  I have not completely verified why
-this happens as it did not appear to be an issue in the 2018 implementation.   
+During debugging, I noticed that some of the widget properties would cause the Shuffleboard to have an error when saving the layout.  It appears to be related to the way the properties are persisted when saving the Shuffleboard layout.  I noticed that providing the class explicitly to the API when setting up exported properties made things work better.
+
+Example of BAD code:
+```
+propertyList.add(Group.of("Tick Lable Display"
+		, Setting.of("Tick Label Orientation", _theGauge.tickLabelOrientationProperty())
+		, Setting.of("Tick Label Color", _theGauge.tickLabelColorProperty(), Color.class)
+		, Setting.of("Tick Lavel Location", _theGauge.tickLabelLocationProperty())
+));
+
+```
+
+Example of GOOD code:
+```
+propertyList.add(Group.of("Tick Lable Display"
+		, Setting.of("Tick Label Orientation", _theGauge.tickLabelOrientationProperty(), TickLabelOrientation.class)
+		, Setting.of("Tick Label Color", _theGauge.tickLabelColorProperty(), Color.class)
+		, Setting.of("Tick Lavel Location", _theGauge.tickLabelLocationProperty(), TickLabelLocation.class)
+));
+
+```
