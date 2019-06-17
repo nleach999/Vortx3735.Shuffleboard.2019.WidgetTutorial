@@ -97,3 +97,27 @@ propertyList.add(Group.of("Tick Lable Display"
 ));
 
 ```
+
+
+# Other Projects of Interest
+
+Some of my other projects related to FRC may be of use as examples.
+
+
+## [Shuffleboard Status Indicators](https://github.com/nleach999/Vortx3735.Shuffleboard.2019.StatusIndicators "Shuffleboard Status Indicators") 
+
+Animated status indicators for indicating changes in numeric ranges.  A good sample of a "complete" Shuffleboard widget library.
+
+![Example of Status Indicators](https://raw.githubusercontent.com/nleach999/Vortx3735.Shuffleboard.2019.StatusIndicators/master/images/pulser.gif)
+
+![Another Status Indicators Example](https://raw.githubusercontent.com/nleach999/Vortx3735.Shuffleboard.2019.StatusIndicators/master/images/wobbler.gif)
+
+
+## [Continuous Integration with Docker and AWS](https://github.com/nleach999/VorTx3735.Docker.2019.CI)
+
+Detailed instructions about how to use a Docker Container with AWS CodeBuild to build your robot code every time a code change is pushed to GitHub.  If the build breaks, it can send a notification to your team's Slack channel.
+
+
+## [Binding Button Combinations to Robot Commands](https://github.com/nleach999/Vortx3735.Robot.2019.ComboButton)
+
+Experimental code for using joystick button combinations to execute robot commands.
